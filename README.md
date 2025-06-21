@@ -1,16 +1,27 @@
-# whftask
 
-A new Flutter project.
 
-## Getting Started
+## Experience
 
-This project is a starting point for a Flutter application.
+This project was built using Flutter with GetX for state management. The development process involved integrating multiple APIs, managing state reactively, and implementing infinite scrolling for recipes. The app was tested on Windows and Android platforms.
 
-A few resources to get you started if this is your first Flutter project:
+## Features Implemented
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Browse and toggle between Recipes and Books.
+- Fetch data from TheMealDB and Google Books APIs.
+- Infinite scroll for recipes with lazy loading.
+- Shimmer loading effect for better UX.
+- Detailed view for each item with images and descriptions.
+- Responsive UI using `flutter_screenutil`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Challenges Faced
+- In Api integration
+- Managing different data structures from two APIs (recipes vs. books).
+- Implementing smooth infinite scroll and loading indicators.
+- Ensuring UI responsiveness across devices.
+
+## Assumptions Made
+
+- The app only fetches fiction books and recipes starting with certain letters.
+- Book details are shown using the `volumeInfo` field.
+- Recipe details are shown using `strMeal` and `strInstructions`.
+- Error handling is basic and prints errors to the console
