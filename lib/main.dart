@@ -6,16 +6,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 import 'app/routes/app_pages.dart';
 void main() async{
-  // void printFcmToken() async {
-  //   String? token = await FirebaseMessaging.instance.getToken();
-  //   print('FCM Token: $token');
-  // }
-  // WidgetsFlutterBinding.ensureInitialized();
-  // await Firebase.initializeApp(
-  //   options:DefaultFirebaseOptions.currentPlatform,
-  // );
-  // printFcmToken();
-  // tz.initializeTimeZones();
+ 
 
   runApp(const MyApp());
 }
@@ -39,7 +30,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return GetMaterialApp(
             debugShowCheckedModeBanner: false,
-            title: "ToDoApp",
+            title: "WHFTask",
             initialRoute: AppPages.INITIAL,
             getPages: AppPages.routes,
           );
